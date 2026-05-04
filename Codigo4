@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[20];
+    int S;
+
+    cout << "Ingrese 20 numeros:\n";
+    for (int i = 0; i < 20; i++) {
+        cin >> arr[i];
+    }
+
+    cout << "Ingrese la suma objetivo: ";
+    cin >> S;
+
+    for (int i = 0; i < 20; i++) {
+        int suma = 0;
+        for (int j = i; j < 20; j++) {
+            suma += arr[j];
+
+            if (suma == S) {
+                cout << "Subarreglo encontrado desde posicion "
+                     << i << " hasta " << j << endl;
+            }
+        }
+    }
+
+    return 0;
+}
