@@ -1,4 +1,4 @@
-# Grupo-4
+# Ejercicio-4
 ENUNCIADO:
 Subarreglos con suma objetivo.
 Dado un arreglo de 20 números y un valor S: 
