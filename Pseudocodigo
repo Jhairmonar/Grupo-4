@@ -1,0 +1,25 @@
+Proceso SubarregloSumaObjetivo
+    Definir arr Como Entero
+    Dimension arr[20]
+    Definir S, i, j, suma Como Entero
+	
+    Escribir "Ingrese 20 numeros:"
+    Para i <- 1 Hasta 20 Hacer
+        Leer arr[i]
+    FinPara
+	
+    Escribir "Ingrese la suma objetivo:"
+    Leer S
+	
+    Para i <- 1 Hasta 20 Hacer
+        suma <- 0
+        Para j <- i Hasta 20 Hacer
+            suma <- suma + arr[j]
+			
+            Si suma = S Entonces
+                Escribir "Subarreglo encontrado desde posicion ", i, " hasta ", j
+            FinSi
+        FinPara
+    FinPara
+	
+FinProceso
